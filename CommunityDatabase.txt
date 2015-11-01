@@ -1,0 +1,1646 @@
+LOC:Miami, Florida
+
+COFFEE:[]
+PROFESSIONAL:[]
+HYBRID:["José Montañez"]
+FRIENDS:[]
+ACADEMIC:[]
+FAMILY:[]
+
+
+LOC: Abernathy, Texas
+
+COFFEE:[]
+PROFESSIONAL:[]
+FRIENDS: ["Lisa McNabb"]
+HYBRID:FRIENDS:[]
+ACADEMIC:[]
+FAMILY:[]
+
+
+LOC:Abilene, Texas
+
+COFFEE:[]
+PROFESSIONAL:[]
+FRIENDS:["Anna Marie Van Fleet, Kristen Harris Bridwell"]
+HYBRID:[]
+ACADEMIC:[]
+FAMILY:[]
+
+
+LOC:Albuquerque, New Mexico
+
+COFFEE:[]
+PROFESSIONAL:[]
+FRIENDS:["Eric Keith Boyd-Gerber, Erin Moya"]
+HYBRID:[]
+ACADEMIC:[]
+FAMILY:[]
+
+
+LOC:Albany, New York
+
+COFFEE:
+PROFESSIONAL:Lena Carpenter
+FRIENDS:Dane Minnick
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+
+LOC:Amarillo, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Allison Hall Bromwell
+Ashley Meadows Walker
+Aundrea Banner
+Bonnie Beckham
+Brandon Beckham
+Calvin Day
+Chasta Pham
+Chuck Waltrip
+Curt Moore
+Danielle Holden
+Duncan Ventura
+Edward Duarte
+Emily Clark
+Frankie Tabares Sanchez
+Georgia Romig
+Halei Story
+Hope Lynn Chasco
+Imelda Saavedra
+Jeff Horne
+Jonas Leon
+Katie Lynn Eddins
+Katie Perkins
+Keltin R. Wiens
+Koehler Wendt
+HYBRID:Amber Merydith Biddler
+Austin Allan Bagwell
+Bekah Purl
+Andrew Carrano
+Ashley Forti
+Bretta Kotara
+Broc Carter
+Colton Harada
+Colton Wedeking
+Corey D. Nathan
+Dani Morton
+Daniel Zewde
+Lindsay Haworth Gomez
+Lori Rozzell James
+Luisa Mireles
+Marcus Langford
+Martin Barbosa
+Matt West
+Miguel A Benavides Jr.
+Roger Wyrick
+Ryan Hazelwood
+Seph Stiles
+Sheryl Proctor
+Stacey Ovalle
+Stephanie James
+Tawni Bühler
+Trav Ruiz
+Travis Kotara
+Trey Roach
+Tyson Taylor
+Vanessa Bendinskas
+Wilson Lemieux
+ACADEMIC:Zivorad Filipovic
+FAMILY:
+
+
+LOC:Atlanta, Georgia
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Thomas Mahan
+ACADEMIC:
+FAMILY:
+
+
+LOC:Austin, Texas
+
+COFFEE:Betsy Lackey
+Matt Irving
+Tamar Madrigal
+PROFESSIONAL:
+FRIENDS:Amie Beckett
+Avery Beckett
+Bonnie Moses
+Britney Ware
+Brittany Platt
+Chris Denny
+Katy Dodd
+Keith Kohanek
+Laura Oliver
+Lauren Vasquez
+Matt Vickery
+Michael Fensterbush
+Mike Dorsey
+Pamela Noboa Cass
+Peter Craig
+Sean Troyer
+Suzi Nelson
+HYBRID:
+Bryan Au-Young
+Emily Petersen
+Logan Hooks
+Ryan Todd Garza
+Micah Vasquez
+Tori Vasquez
+ACADEMIC:
+FAMILY:
+
+
+LOC:Bangkok, Thailand
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Meena Tang
+ACADEMIC:
+FAMILY:
+
+
+LOC:Beijing, China
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Cecilia Yatianzhuo Wang
+Cynthia Cheng
+Yuchen Xiao
+Yunyun Chan
+ACADEMIC:
+FAMILY:
+
+
+LOC:Bellevue, Washington
+
+COFFEE:
+PROFESSIONAL:Deborah Ritner
+Nicole Bolling
+FRIENDS:Heather Johnson Heltzel
+HYBRID:Cara D'Amato
+ACADEMIC:
+FAMILY:
+
+
+LOC:Bellingham, Washington
+
+COFFEE:Thomas Tague
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+
+LOC:Berlin, Germany
+Berlin, Germany
+
+COFFEE:
+PROFESSIONAL:Bryan Cooke
+FRIENDS:Theresa Bohm
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+
+LOC:Brooklyn, NY
+
+COFFEE:Holly Fujishige
+PROFESSIONAL:Karali Pitzele
+FRIENDS:
+HYBRID:Gabriel Lawrence
+ACADEMIC:
+FAMILY:
+
+
+LOC:Bowling Green, Ohio
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Andrew Sowder
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+
+LOC:Canyon, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Nikki Juarez
+HYBRID:Aaron Sams
+Alexandria Gruhlkey
+Amber Moore
+Andrew Garay
+Anna McVey
+Anthony Smith
+Blane Dickson
+Brandy Lea Roberts
+Callie Grice
+Courtney Jessica Inman
+Emma Marshall
+Evan Grice
+Honnah Taylor
+Johnny Story
+Josh Durham
+Melissa Maldonado-Smith
+Niki Brown
+Randy Ray
+Zach Barnes
+ACADEMIC:Emily Kinski
+Butler Cain
+Trudy Hanson
+Kim Bruce
+FAMILY:
+
+
+LOC:Chengdu, China
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Yiyun Long
+ACADEMIC:
+FAMILY:
+
+
+LOC:Chiang Mai, Thailand
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Sonia Nicholas
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+
+LOC:Chicago, Illinois
+
+COFFEE:Chicago, Illinois
+PROFESSIONAL:
+FRIENDS:Lacey Chester
+MaryBeth Searls
+Piero Taliente
+Sandi Adamson
+HYBRID:Houston Howell
+Piero Taliente
+ACADEMIC:
+FAMILY:
+
+
+LOC:Cleveland, Ohio
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Garett Jones
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+
+LOC:Colorado Springs, Colorado
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Will Riner
+HYBRID:Sydney Harris
+ACADEMIC:
+FAMILY:
+
+
+LOC:Comfort, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Shannon Strauss
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Bedford, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Ashton Billard
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+
+LOC:Plano, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Becky Ortega
+Dalton Ortega
+Holly Golvach
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Tyler, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Caleb Milligan
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Arlington, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Jeff Bethke
+Owen Moheet
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Dallas, Texas
+
+COFFEE:Allison Moore
+Dave Hill
+Jordan Martin
+PROFESSIONAL:
+FRIENDS:Abe Kotara
+Chad Wilborn
+Chandra Brock
+Ashley Gill
+Elyse Tucker
+Emily Anne Bennett McGee
+Ethan Uranga
+Kate Heyde
+Kristen Gallegos
+Lauren Milner
+Quin Murphy
+Rita Lambert
+Robert Bitz
+Trevor Reidy
+Wes Murphy
+Whitney Dometrius
+HYBRID:Amber Clodfelter
+Chelsea Riddle
+Crystal Sanders
+Erin Hartigan
+Hilery Harris- Hill
+Krystina Martinez
+Lance Caden Conaway
+Matty Harmel
+Teresa Dunn
+Troy Reich
+ACADEMIC:
+FAMILY:Debra Gilcrease Shumate
+
+LOC:Denver, Colorado
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Ben Willms
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Dubai, UAE
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Julie Ruiz
+ACADEMIC:
+FAMILY:
+
+LOC:Durham, North Carolina
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Kelsey A. Kemp
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Edmonton, Alberta
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Jeana Marie Ridley
+ACADEMIC:
+FAMILY:
+
+LOC:Ellensburg, Washington
+
+COFFEE:Tim Dyk
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Euless, TX
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:Paula Gilcrease Cassidy
+
+LOC:Fort Lauderdale, Florida
+
+COFFEE:David Anderson
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Fort Walton Beach, Florida
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:Leslie Wilson, Rose Marie Gross
+
+LOC:Fort Worth, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Jessica Haggerty
+Kate Hearne
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Fresno, California
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Joan Lee
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Georgetown, Texas
+
+COFFEE:Kirby Smith
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Accra, Ghana
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:Enyonam Millicent
+FAMILY:
+
+LOC:Grapeland, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Jacob Cameron Wyers
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Grapevine, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Stephanie Hazel
+ACADEMIC:
+FAMILY:
+
+LOC:Greeley, Colorado
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Kory Zulauf
+ACADEMIC:
+FAMILY:
+
+LOC:Großbettlingen, Germany
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Yvette Pfeiffer
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Guam
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:John Halloran
+Elmer Dulla
+Krysten Carlson
+Lawrence Cruz
+Rafael Baza
+HYBRID:Josias Hernandez
+Royce Guerra
+ACADEMIC:
+FAMILY:
+
+LOC:Hamburg, Germany
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Filip Egert
+Hannes Detjen
+ACADEMIC:
+FAMILY:
+
+LOC:Ho Chi Minh City, Vietnam
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Jamelyn French
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Honolulu, Hawaii
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Houston, Texas
+
+COFFEE:Christy Troutman
+Joseph Peters
+Matt Salazar
+PROFESSIONAL:
+FRIENDS:Christine Nicole
+Margaret Whitehead
+Mary Burroughs
+Mia Christina
+Preston Mitchener
+Tony De Litta
+Travis Kelley
+HYBRID:Jessica Perkins
+ACADEMIC:
+FAMILY:
+
+LOC:Jeddah, Saudi Arabia
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Albaraa Albairuti
+ACADEMIC:
+FAMILY:
+
+LOC:Justin, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Randall Box
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Kansas City, Kansas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Jacob Thomas
+Jeny McCray
+ACADEMIC:
+FAMILY:
+
+LOC:Kansas City, Missouri
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Josh Kelso
+HYBRID:Dae Smith
+ACADEMIC:
+FAMILY:
+
+LOC:Kent, Washington
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Dave Anderson
+Peter Ellis
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Kerrville, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Steven Blakeley
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Las Vegas, Nevada
+
+COFFEE:Cole McBride
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Levelland, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Adrianne Bush
+Anna Marie Waldrip
+Brittany Payton
+Zach James
+Ziyad Alomari
+HYBRID:Tammy Amos
+ACADEMIC:Bethany Borba
+Brent Wheeler
+Cary C Banks
+Chris Neal
+Dolf Guardiola
+Ed Marsh
+Greg Cook
+John Reid 
+Wade Prescott McNutt
+FAMILY:
+
+LOC:Los Angeles, California
+
+COFFEE:Akaash Saini
+Alissa Beyer
+Nathanael Long
+Wade Burden
+Skylar Grant Stevens
+PROFESSIONAL:Mike Masters
+FRIENDS:Cassy A. Rivera
+Joey Ryan
+Yazeed Hiyari
+Zachary Binks
+HYBRID:Christine Upton
+Jordan Upton
+Erik LeDrew
+Ryan Leedy
+Tyler Sweeney
+ACADEMIC:
+FAMILY:
+
+LOC:Lubbock, Texas
+
+COFFEE:Alexander Hawkins Isett
+Amanda Stewart
+Caleb Jude Green
+Corbin Biehler
+Daniel Moss
+Hannah Gill
+Jessica Akin
+Jiminey Fallin
+John Mark Rogers
+Katie Howell
+Mattie Mae Sims
+Nick Isett
+Nicole Gutierrez
+Victoria Isett
+PROFESSIONAL:
+FRIENDS:Allie Leigh
+Amy Renee Gates
+Andrew Searcy
+Andrew West
+Ann Cox
+Anthony AP Perez
+Anthony Mann
+Armand Neri
+Ashlee Paetzold Jolly
+Ashley Brooke Webb
+Ashley Martin
+Ashtunn Akin
+Barrett Pierce
+Becky Straut Collier
+Ben Laycock
+Beth Krissa
+Bobby Martinez
+Brad Ruiz
+Brady Collier
+Brady Stoker
+Brandon Tate
+Brett Womble
+Brian Chandler
+Brian Drake
+Brian Wilkins
+Brianna Brewer
+Britney Rice Limon
+Brittany Brock
+Brittney Bixler Stoker
+Allie Timms
+Amanda Fowler Griffith
+Callie Mayes
+Casey Lampert
+Cassie Pene-Mogg
+Celso Garcia
+Cherenda Dobitz
+Chip Darden
+Chris Galanos
+Chris Key
+Chris Pettyjohn
+Chrystal Gist
+Clay Cristy
+Cody Kimbrough
+Colby McClellan
+Courtney Brooks
+D.j. Perez
+Dacey Dunlap Carson
+Danae Purtell
+Daniel Gutierrez
+Dawn Conwright
+Devanie Cantrell
+Dustin Perez
+Dustin Petkau
+Ellen Hood
+Emily Green Brannon
+Emily Joy Booker
+Erin Dipprey
+Erin Smith
+Gabe Orta
+Gabe Palacios
+Gabriel Garcia
+Gail Shooter
+Gary Chandler
+Gary Gates
+Heath Stone
+Henry Castillo
+Humberto Del Valle
+Jackie Eckman
+Jade Booher
+Jade Cooper Lagoski
+Jake Warren
+Jeff Koerner
+Jenna Johnson
+Jeremy Driscoll
+Jeremy Graves
+Jonathan Beck
+Jordan Simmons
+Jose Del Valle
+Josef Blake
+Katie Smith Trevino
+Keith Gist
+Kalen Dozier
+Kallan Sanders
+Kameron Rogers
+Kassie McNelly
+Kathleen NationsKatie Smith Trevino
+Keith Gist
+Kevin Hardegree
+Klarissa Mariscal
+Kolbe Cotter
+Kory Peterson
+Krystal Kohanek Moyers
+Kylen Karr McFarlin
+Kyndra Smith
+Lacy Prock
+Laura Trent Taylor
+Lisa Boden
+Luke Howell
+Lupe Flores
+Lyndsi Dudley
+Maegan Guthrie-Romero
+Marcie Beeck Wilkins
+Marcus Lowry
+Mark Nix
+Matt Patridge
+Matthew Rider
+Mikaela Forkner
+Mikah Wisian
+Milagros Gaytan
+Mindy Aguilar
+Mitchell Rambo
+Morgan Worth
+Natalie Thomas
+Nathan Kaufman
+Rachel R-Cat Porter
+Rebecca Treadwell
+Roland Adams
+Ryan Pearson
+Sara Hunter
+Sara McNallen
+Sarah Barbre Harper
+Sawyer Howell
+Sean Canaday
+Sean Rude
+Shelbi Bonds
+Skylar Johnson
+Spencer Gill
+Stephanie Lambert
+Stephanie Saldivar
+Stephen Elliott
+Stepheni Jayne
+Steven Lunsford
+Swade Moyers
+Tamara Haney
+Tanner Cruce
+Taylor Freeman
+Taylor Stoker
+Taylor Wolf
+Tiffany Padilla
+Tim Fuentes
+Timothy Fabrizzio Osaghae
+Tony Harper
+Trevor James
+Wes Graves
+Whitney Martin-Rister
+HYBRID:Aaron Thomas
+Chris Jenkins
+Isaac Bermea
+J'Rhea Carrillo
+Jennifer Fraley-Nowacek
+Judy Carpenter Howell
+Julia Erin
+Justin Lentz
+Justin Thomas Williams
+Kenna Pruitt
+Lane Formby
+Mike Nghiem
+Steven Pilger
+Taylor Harrell
+Thomas Boyd
+Wes Condray
+ACADEMIC:Suzanne Fortenberry Hamilton
+FAMILY:Melissa Gross
+Shay Word
+Venita Gross
+
+LOC:Luxembourg City, Luxembourg
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Monica Trantow
+ACADEMIC:
+FAMILY:
+
+LOC:Marlborough, Massachusetts
+
+COFFEE:Will Walkup
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Mendecino, CA
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Jesse DeLuca
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Mercer Island, Washington
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Danielle Johnson
+Lucy Turner
+HYBRID:Evan Kolius
+ACADEMIC:
+FAMILY:
+
+LOC:Midland, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Chelsea Brianne Petty
+Hayley Barber
+Jordan Goodsell
+Kendall Thomas
+Michael Barber
+Tizoc Strong
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Midlothian, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Natalie Holleman
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Minneapolis, Minnesota
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Christopher Shaffer 
+Clarissa Shaffer
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Morgantown, West Virginia
+
+COFFEE:Jeth Walkup
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Moscow, Russia
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Katerina Sinitskaya
+ACADEMIC:
+FAMILY:
+
+LOC:Nanjing, China
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Jianchun Lexie Chen
+ACADEMIC:
+FAMILY:
+
+LOC:New Braunfels, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Mark Kubena
+Tyler Dozier
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:New Deal, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Sara Jones
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:New York City, New York
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Meg Rose
+HYBRID:Bart Williams
+ACADEMIC:
+FAMILY:
+
+LOC:Oklahoma City, Oklahoma
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Jadiah Jene Joi Riley
+HYBRID:Adam Snider
+Viri Diaz
+ACADEMIC:
+FAMILY:
+
+LOC:Olympia, Washington
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Taylor Briaun Meyer
+ACADEMIC:
+FAMILY:
+
+LOC:Omaha, Nebraska
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Hayden Ray
+ACADEMIC:
+FAMILY:
+
+LOC:Paducah, Kentucky
+
+COFFEE:Thomas Charles Paessler
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Panama City, Florida
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:Kathryn Alexandra
+
+LOC:Pelham, New York
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Sam Wiley
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Portland, OR
+
+COFFEE:Kirstin Soto
+Robbie Krask
+PROFESSIONAL:
+FRIENDS:Jesse Dearing
+Katie Dearing
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Porto Alegre, Brazil
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Thiago Biesdorf Teixeira
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Qingdao, Shandong
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Summer Tong Sun
+ACADEMIC:
+FAMILY:
+
+LOC:Issaquah, Washington
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Taryn Graham
+HYBRID:Cody Heyn
+ACADEMIC:
+FAMILY:
+
+LOC:Quito, Ecuador
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:María Dolores Molina
+ACADEMIC:
+FAMILY:
+
+LOC:Red Oak, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Rochelle Jones
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Redmond, Washington
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Aimery Fortuner
+ACADEMIC:
+FAMILY:
+
+LOC:Rockwall, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Tara Chester
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:San Antonio, Texas
+
+COFFEE:Erik Beruvides
+PROFESSIONAL:
+FRIENDS:Chris York
+Colin Harris
+Shannan Sowder Pfeifer
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:San Diego, California
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Loweri Williams
+HYBRID:Ashley Myrriah
+ACADEMIC:
+FAMILY:
+
+LOC:San Francisco, California
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Alyssa Monath
+Amy M Walsh
+Bryan Darling
+Jenny Beck
+Nnena Ukuku
+HYBRID:Ethan Terry
+Matthew Homyak
+ACADEMIC:
+FAMILY:Matthew Gross
+
+LOC:San Marcos, TX
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Leah Hatcher
+ACADEMIC:
+FAMILY:
+
+LOC:San Salvador, El Salvador
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:J Alberto Martinez-Interiano
+ACADEMIC:
+FAMILY:
+
+LOC:San Sebastian, Spain
+
+COFFEE:Landon Cotham
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Santa Barbara, California
+
+COFFEE:
+PROFESSIONAL:Clif Magness
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Santa Cruz de la Sierra, Bolivia
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Yngrid Abudinen
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Scottsdale, Arizona
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Ashley Bergeron
+ACADEMIC:
+FAMILY:
+
+LOC:Seattle, Washington
+
+COFFEE:Taylor Murphy
+Allison Hardy
+Andrew Arguelles
+Brian P Henley
+Deejay Brower
+Hannah Jones
+Heather Siverson
+Jonathan Angle
+Katie Tague
+Kelli A Taylor
+Kelsey Batrack
+Kennah Broweleit
+Kim Berkley
+Kylie Provost
+Lizzie Humphries
+Lizzie Rodrigue
+Luke Elliott
+Lyndsay Field Dyk
+Madison Young
+Maryclare Griffin
+Matt Dalton
+Mike J. Cannon
+Sean Lieb
+Stephen Brenden
+Torin Bracey
+Trent Siverson
+Velton Ross
+Vi Thai Nguyen
+PROFESSIONAL:Jim Balazic
+Pete Grondel
+Jim Freeze
+FRIENDS:Adina Ewing
+Alex Herbig
+Andrew Hernandez
+Andrew Salituri
+Arielle Corson
+Aubree Wilson
+Beth Milstid
+Billie Jean Tague
+Brandy Westmore
+Christopher McCool
+Corey Skurka
+Craig Bruce
+Danette Ver Woert
+Debbie Bryant
+Elizabeth Kennedy
+Elizabeth Woods
+Erin Suderman
+Jen Okimoto
+Jihee Kim
+Joe Bryant
+John Varela
+Kate Howland
+Kathleen Moser
+Kathleen Murray
+Kathy Block
+Keely Bryant
+Liz Marie
+Luke Rasmus
+Max Benas
+Melissa Naylor
+Micah Dodson
+Michael Henreckson
+Michael Villanueva
+Mindy Byram
+Nicole McFarland
+Peter Cecil O'Higgins
+Rachel Nicole Rae
+Rachel Olson
+Rajan Cheriel
+Ryan Bailey
+Ryan Fitts
+Sarah Samson
+Shane Kodad
+Shelby Huff
+Stephanos Prufrock
+HYBRID:Thiérry Fortunér
+Ala' Khan
+Alexandra Gunnoe
+Alexis Diana
+Amber Rose
+Andy Heye
+Anita Verna Crofts
+Ann Ho
+Anna Micheel
+Bob McHenry
+Brian Shook
+Bryan Frasier
+Caleb Buse
+Cameron Lacombe
+Carrie Hawthorne
+Casey Griffin
+Cassandra Schwartz 
+Cassie Wang
+Chad Bever
+Chloe Horning
+Chris Clark
+Chris Hawley
+Cody Heyn
+Cole Palen
+Dean Shimabukuro
+Elias Demisse
+Elizabeth Ziolkowski Berg
+Evan Kolius
+Hanson Hosein
+Hilary Lombard
+Ian Block
+Ian Newhall
+Jacob Christensen
+Jamie Rasmus
+Jared Sholk
+Jeff Samiljan
+Jennifer Burns
+Jennifer Buse
+Jihee Kim
+Jill Reddish
+Joe Hunich
+Joseph Pavey
+Jovana Teodorovic
+Katie Zacharkiw
+Kelly Merrill
+Ken Smith
+Kyle Richey
+Leigh Burmesch
+Lindsay Sieverkropp
+Logan Tegman
+Mark Guenther
+Michael Barela
+Michael Stein
+Naomi Thalenberg
+Nicholas Holman
+Paul Von Hagen
+Phil Melton
+Price Hall
+Raven Kelly Smith
+Renick Woods
+Ricky Poole
+Sam Larkin
+Scott Macklin
+Scott Morris
+Stephen Schroeder
+Steve Stansfeld
+Thomas Sergneri
+Tim Hurley
+Will Taylor Llapitan
+ACADEMIC:Bill Zumeta, Aaron Katz, 
+FAMILY:Jenny Lurene Lemley
+
+LOC:Renton, Washington
+
+COFFEE:Mike Moskowitz
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Shallowater, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Adrian Martinez
+Angela Miller
+Antonio Garza
+Ash Castilleja
+Ashley Martinez
+Ashley Siegel
+Beth Elmore
+Bethany Browne
+Chase Stewart
+Cody Pack
+Dehdra Draper
+Dustin Kimbrell
+Edna Lopez
+Eric VonBerg
+Jacob Bewley
+Jerrod Carr
+Jesse Hill
+Joey Trevino
+John Paul Trocchio
+Josh Winters
+Julie Haralson Jones
+Kelly Halpain
+Kory Ware
+Kristi Jones
+Kristina McCravey
+Kyle Carroll
+Lace Cristan-Beckum
+Laura Ellis Campbell
+Megan Blair
+Melissa Beaty Johnson
+Miguel Cardenas
+Nathan Riojas
+Nicole Dudley
+Nicole Hargrove
+Samantha Bethune
+Shannon Mink
+Shawn Pebsworth
+Whitney Ward
+HYBRID:Junior Vasquez
+Katrina Litsch Ballentine
+Matthew Ballentine
+Mickie Vasquez
+Tammy Tobola Roberts
+Trestia Moore Elliott
+ACADEMIC:
+FAMILY:
+
+LOC:Shanghai, China
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Jiajia Wang
+Jun Fan
+ACADEMIC:
+FAMILY:
+
+LOC:Spur, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:Fernella Graves Gilcrease
+
+LOC:St. Louis, Missouri
+
+COFFEE:T.j. Macke
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Sudan, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Jay Messamore
+HYBRID:
+ACADEMIC:
+FAMILY:Sue Whiteaker
+Sherry Whiteaker
+
+LOC:Slaton, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:Brent Whiteaker
+
+LOC:Taipei, Taiwan
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Oscar Huang
+ACADEMIC:
+FAMILY:
+
+LOC:Tempe, Arizona
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:Justin Whiteaker
+
+LOC:Tyler, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Caleb Milligan
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Victoria, British Columbia
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Darren Szpak
+Stephanie Pound
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Waco, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Brittany Bagwell
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Wake Forest, North Carolina
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:Leslie Graves Nunnery
+
+LOC:Washington, D.C.
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Ciro Peredo
+Ryan Janssen
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:White Deer, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Thomas Kotara
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Wichita Fallas, Texas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Corey Zotz
+Kimbra Kell Thomas
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Wichita, Kansas
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Kendra Brown
+Stephanie Jaime
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Wroclaw, Poland
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:Jacek Jońca-Jasiński
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Yoder, Wyoming
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:
+ACADEMIC:
+FAMILY:
+
+LOC:Zhangzhou, China
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Jing Cai
+ACADEMIC:
+FAMILY:
+
+LOC:Zhuzhou, China
+
+COFFEE:
+PROFESSIONAL:
+FRIENDS:
+HYBRID:Yixuan Long
+ACADEMIC:
+FAMILY:
+
+
+
+
+
