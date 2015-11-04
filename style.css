@@ -25,25 +25,59 @@ button{
     margin:4px;
 }
 button:focus {outline:0;}
-
+a{
+    text-decoration: none;
+    color:#000;
+}
 #container{
     /*position: absolute;*/
     max-width:1000px;
     max-height: 600px;
     margin: 0 auto;  
+    /*display:inline-block;*/
 }
-
+#mapWrapper{
+    /*float:left;*/
+    display: inline-block;
+    position: relative;
+    
+    
+}
 #googleMap{
-	/*position: absolute;*/
-	min-width:900px;
+	/*position: relative;*/
+	min-width:810px;
 	min-height:400px;
+    max-width:810px;
+    max-height:420px;
 	/*z-index: 1;*/
     border-top:3px solid #e45544;
     border-right:6px solid #e45544;
-    border-left:6px solid #e45544;
-    border-bottom:3px solid #e45544;  
+    border-left:3px solid #e45544;
+    border-bottom:3px solid #e45544;
+    float:left;  
 
 	}
+
+
+  #cities{
+    /*position: relative;*/
+    font-family: quicksandbook;
+    font-size: .7em;
+    background-color: #FFF;
+    min-width:170px;
+    min-height:400; 
+    max-width:170px;
+    max-height:400px;
+    border-top:3px solid #e45544;
+    border-right:3px solid #e45544;
+    border-left:6px solid #e45544;
+    border-bottom:3px solid #e45544;  
+    padding-left: 2px; 
+    float:left;
+    overflow-y: scroll;
+
+  }
+
 #infoPane{
     /*font-weight: bold;*/
     background-color: #FFF;
@@ -68,7 +102,7 @@ button:focus {outline:0;}
     font-family: quicksandbook;
     font-size: .7em;
     display: inline-block;
-    position: relative;
+    /*position: absolute;*/
     /*border:1px dashed black;*/
     min-width: 154px;
     max-width: 154px;
@@ -101,4 +135,5 @@ button:focus {outline:0;}
     margin:0 auto;
     /*overflow-y: scroll;*/
   }
+
 

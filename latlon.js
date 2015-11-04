@@ -80,16 +80,24 @@
 			}
 		}
 	}
+
+	function setOpenWin(iw){
+		openWin = iw;
+	}
+
+	function getIW(index){
+		return infowindows[index];
+	}
+
 	var cityList = populate();
 	var lines=[];
 	var myMarkers = [];
+	var infowindows = [];
+	var map;
+	var openWin;
+	var myCenter;
 //Init function
 function initialize() {
-	
-	
-	var infowindows = [];
-	var openWin;
-
 
 	var totalCoffee=0;
 	var totalPro=0;
@@ -130,6 +138,7 @@ function initialize() {
 			);
 	}
 	
+	
 	// myMarkers[0].setIcon(
 	// 	{
 	// 		url:"home.png",
@@ -141,7 +150,7 @@ function initialize() {
 	// 	}
 	// );
 	
-	var totalStates = "<br>Total Cities in Network: " + cityList["CityMap"].length;
+	var totalStates = "<br><a href=\"#\" onclick=\"map.setZoom(2);map.setCenter(new google.maps.LatLng(40,-90))\">Total Cities in Network: " + cityList["CityMap"].length + "</a>";
 	totalStates += "<br><button onClick=\"allNet(cityList, lines, myMarkers)\">Total: " + totalNetwork+ "</button>";
 	totalStates += " <button onClick=\"coffeeNet(cityList, lines, myMarkers)\">Coffee: " + totalCoffee + "</button>"; 
 	totalStates += " <button onClick=\"proNet(cityList, lines, myMarkers)\">Professional: " + totalPro+ "</button>";
@@ -153,18 +162,22 @@ function initialize() {
 	document.getElementById("infoPane").innerHTML += totalStates;
 
 
-	var myCenter = new google.maps.LatLng(40, -97);
+	var myCenter =new google.maps.LatLng(40,-90) ;
 	//Map properties
 	var mapProp = {
-	  center: new google.maps.LatLng(20,-122.332071) ,
+	  center: myCenter,
 	  zoom: zoomLevel,
 	  mapTypeId: google.maps.MapTypeId.TERRAIN,
 	  disableDefaultUI:true
 	};
 
 	// Build map in DOM
-	var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+	map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
 	
+
+
+
+
 	//event listener setup
 	for (var i=0; i < myMarkers.length ; i++){
 		myMarkers[i].setMap(map); 
@@ -173,7 +186,24 @@ function initialize() {
 		  			{ /* content:"<div>"+myMarkers[i].getTitle()+"</div>"*/ } );
 		infowindows.push(iw);
 
+		  		var localTotal = cityList["CityMap"][i][3]["Coffee"].length
+		  		+ cityList["CityMap"][i][3]["Professional"].length
+		  		+ cityList["CityMap"][i][3]["Friends"].length
+		  		+ cityList["CityMap"][i][3]["Hybrid"].length
+		  		+ cityList["CityMap"][i][3]["Academic"].length
+		  		+ cityList["CityMap"][i][3]["Family"].length;
 
+				var infoText="<div style=\"font-family:quicksandbook\">"
+				infoText += "Network in " + myMarkers[i].getTitle() + ": "+ localTotal;
+				infoText += "<br>Coffee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Coffee"].length;
+			  	infoText += "<br>Professional&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Professional"].length;
+				infoText += "<br>Friends&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Friends"].length; 
+				infoText += "<br>Hybrid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Hybrid"].length;
+				infoText += "<br>Academic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Academic"].length;
+				infoText += "<br>Family&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Family"].length + "</div>";
+
+				infowindows[i].setContent(infoText);
+				openWin = infowindows[i];
 		google.maps.event.addListener(myMarkers[i], 'click', (function(index) {
 			//console.log("Test before IIFE");
 			return function(){
@@ -183,23 +213,7 @@ function initialize() {
 		  			openWin.close();
 		  		}
 
-		  		var localTotal = cityList["CityMap"][index][3]["Coffee"].length
-		  		+ cityList["CityMap"][index][3]["Professional"].length
-		  		+ cityList["CityMap"][index][3]["Friends"].length
-		  		+ cityList["CityMap"][index][3]["Hybrid"].length
-		  		+ cityList["CityMap"][index][3]["Academic"].length
-		  		+ cityList["CityMap"][index][3]["Family"].length;
 
-				var infoText="<div style=\"font-family:quicksandbook\">"
-				infoText += "Network in " + myMarkers[index].getTitle() + ": "+ localTotal;
-				infoText += "<br>Coffee: " + cityList["CityMap"][index][3]["Coffee"].length;
-			  	infoText += "  Professional: " + cityList["CityMap"][index][3]["Professional"].length;
-				infoText += "  Friends: " + cityList["CityMap"][index][3]["Friends"].length; 
-				infoText += "<br>Hybrid: " + cityList["CityMap"][index][3]["Hybrid"].length;
-				infoText += "  Academic: " + cityList["CityMap"][index][3]["Academic"].length;
-				infoText += "  Family: " + cityList["CityMap"][index][3]["Family"].length + "</div>";
-
-				infowindows[index].setContent(infoText);
 		  		infowindows[index].open(map, myMarkers[index]);
 
 				openWin = infowindows[index];	
@@ -277,7 +291,23 @@ function initialize() {
 		lines.push(line);
 		
 	}
+	//cityList["CityMap"][i][0]
+	var cityNameList="";
+	var iwLink;
+	for (var i = 0; i < myMarkers.length; i++){
+		console.log(myMarkers.length);
+		iwLink=infowindows[i];
+		cityNameList += 
+					"<a href=\"#\" onclick=\"openWin.close();"
+										+"setOpenWin(getIW("+i+"));"
+										+"openWin.open(map, myMarkers["+i+"]);"
+										+"map.setZoom(5);"
+										+"map.setCenter(myMarkers["+i+"].getPosition());"
+										+"google.maps.event.trigger(myMarkers["+i+"], \'click\')\">" 
+					+ myMarkers[i].getTitle() + "</a><br>";
 
+	}
+	document.getElementById("cities").innerHTML = cityNameList;
 
 	//Styling rules for map. 
 	var styles = [
@@ -713,7 +743,7 @@ function populate(){
 			"Family":[] 
 		} ],
 
-	[ "GroÃŸbettlingen, Germany", 48.591771,9.310414 ,
+	[ "Gro&#223;bettlingen, Germany", 48.591771,9.310414 ,
 		{
 			"Coffee":[], 
 			"Professional":[],
