@@ -1,104 +1,36 @@
+//fields
+var myMarkers = [];
+var cityList = {};
+var infowindows = [];
+var openWin;
+var lines=[];
 
-	
-	function allNet(cityList, lines, myMarkers){
-		for (var i = 0; i < myMarkers.length; i++){
-			lines[i].setVisible(true);
-			lines[i].setOptions({strokeWeight:0.8});
-			myMarkers[i].setVisible(true);
-		}
-	}
-	function coffeeNet(cityList, lines, myMarkers){
-		for (var i = 0; i < myMarkers.length; i++){
-			if (cityList["CityMap"][i][3]["Coffee"].length < 1){
-				lines[i].setVisible(false);
-				myMarkers[i].setVisible(false);
-			} else {
-				lines[i].setVisible(true);
-				lines[i].setOptions({strokeWeight:1.5});
-				myMarkers[i].setVisible(true);
+var totalCoffee=0;
+var totalPro=0;
+var totalFriends=0;
+var totalHybrid=0;
+var totalAcademic=0;
+var totalFamily=0;
+var totalNetwork=0
 
-			}
-		}
-	}
-		function proNet(cityList, lines, myMarkers){
-		for (var i = 0; i < myMarkers.length; i++){
-			if (cityList["CityMap"][i][3]["Professional"].length < 1){
-				lines[i].setVisible(false);
-				myMarkers[i].setVisible(false);
-			} else {
-				lines[i].setVisible(true);
-				lines[i].setOptions({strokeWeight:1.5});
-				myMarkers[i].setVisible(true);
-			}
-		}
-	}
-		function hybridNet(cityList, lines, myMarkers){
-		for (var i = 0; i < myMarkers.length; i++){
-			if (cityList["CityMap"][i][3]["Hybrid"].length < 1){
-				lines[i].setVisible(false);
-				myMarkers[i].setVisible(false);
-			} else {
-				lines[i].setVisible(true);
-				lines[i].setOptions({strokeWeight:1.5});
-				myMarkers[i].setVisible(true);
-			}
-		}
-	}
-		function friendsNet(cityList, lines, myMarkers){
-		for (var i = 0; i < myMarkers.length; i++){
-			if (cityList["CityMap"][i][3]["Friends"].length < 1){
-				lines[i].setVisible(false);
-				myMarkers[i].setVisible(false);
-			} else {
-				lines[i].setVisible(true);
-				lines[i].setOptions({strokeWeight:1.5});
-				myMarkers[i].setVisible(true);
-			}
-		}
-	}
-		function academicNet(cityList, lines, myMarkers){
-		for (var i = 0; i < myMarkers.length; i++){
-			if (cityList["CityMap"][i][3]["Academic"].length < 1){
-				lines[i].setVisible(false);
-				myMarkers[i].setVisible(false);
-			} else {
-				lines[i].setVisible(true);
-				lines[i].setOptions({strokeWeight:1.5});
-				myMarkers[i].setVisible(true);
-			}
-		}
-	}
-		function familyNet(cityList, lines, myMarkers){
-		for (var i = 0; i < myMarkers.length; i++){
-			if (cityList["CityMap"][i][3]["Family"].length < 1){
-				lines[i].setVisible(false);
-				myMarkers[i].setVisible(false);
-			} else {
-				lines[i].setVisible(true);
-				lines[i].setOptions({strokeWeight:1.5});
-				myMarkers[i].setVisible(true);
-			}
-		}
-	}
-	var cityList = populate();
-	var lines=[];
-	var myMarkers = [];
-//Init function
-function initialize() {
-	
-	
-	var infowindows = [];
-	var openWin;
+var totalStates = "";
+
+var myCenter = new google.maps.LatLng(40, -97);
+var mapProp = 
+	{
+	  center: new google.maps.LatLng(20,-122.332071) ,
+	  zoom: 2,
+	  mapTypeId: google.maps.MapTypeId.TERRAIN
+	};
+var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
 
-	var totalCoffee=0;
-	var totalPro=0;
-	var totalFriends=0;
-	var totalHybrid=0;
-	var totalAcademic=0;
-	var totalFamily=0;
-	var zoomLevel=2;
+function buildCityList(){
+	cityList = populate();
+	console.log(cityList["CityMap"]);
+}
 
+function countNetworks(){
 	for (var i = 0; i < cityList["CityMap"].length; i++){
 		totalCoffee   += cityList["CityMap"][i][3]["Coffee"].length;
 		totalPro      += cityList["CityMap"][i][3]["Professional"].length;
@@ -107,10 +39,11 @@ function initialize() {
 		totalAcademic += cityList["CityMap"][i][3]["Academic"].length;
 		totalFamily   += cityList["CityMap"][i][3]["Family"].length;
 	}
-	var totalNetwork = totalCoffee + totalPro + totalFriends + totalHybrid + totalAcademic + totalFamily;
-	//console.log(totalNetwork);
+	totalNetwork = totalCoffee + totalPro + totalFriends + totalHybrid + totalAcademic + totalFamily;
+}
 
-	for (var i = 0; i < cityList["CityMap"].length; i++ )
+function buildMarkers(){
+		for (var i = 0; i < cityList["CityMap"].length; i++ )
 	{
 			myMarkers.push(
 			  new google.maps.Marker(
@@ -130,42 +63,33 @@ function initialize() {
 			);
 	}
 	
-	// myMarkers[0].setIcon(
-	// 	{
-	// 		url:"home.png",
-	// 		origin: new google.maps.Point(0,0),
-	// 		anchor:new google.maps.Point(16,16),
-	// 		scaledSize:new google.maps.Size(32, 32), 
-	// 		zIndex:1
+	myMarkers[0].setIcon(
+		{
+			url:"home.png",
+			origin: new google.maps.Point(0,0),
+			anchor:new google.maps.Point(24,24),
+			scaledSize:new google.maps.Size(48, 48), 
+			zIndex:1
 
-	// 	}
-	// );
-	
-	var totalStates = "<br>Total Cities in Network: " + cityList["CityMap"].length;
-	totalStates += "<br><button onClick=\"allNet(cityList, lines, myMarkers)\">Total: " + totalNetwork+ "</button>";
-	totalStates += " <button onClick=\"coffeeNet(cityList, lines, myMarkers)\">Coffee: " + totalCoffee + "</button>"; 
-	totalStates += " <button onClick=\"proNet(cityList, lines, myMarkers)\">Professional: " + totalPro+ "</button>";
-	totalStates += " <button onClick=\"friendsNet(cityList, lines, myMarkers)\">Friends: " + totalFriends+ "</button>";
-	totalStates += " <br><button onClick=\"hybridNet(cityList, lines, myMarkers)\">Hybrid: " + totalHybrid+ "</button>";
-	totalStates += " <button onClick=\"academicNet(cityList, lines, myMarkers)\">Academic: " + totalAcademic+ "</button>";
-	totalStates += " <button onClick=\"familyNet(cityList, lines, myMarkers)\">Family: " + totalFamily+ "</button>"; 
+		}
+	);
+}
+
+function buildGlobalInfoString(){
+	totalStates = "Total Cities in Network: " + cityList["CityMap"].length;
+	totalStates += "<br>Total Size of All Networks: " + totalNetwork;
+	totalStates += "<br><button onClick=\"coffeeNet()\">Coffee: " + totalCoffee + "</button>"; 
+	totalStates += " Professional: " + totalPro;
+	totalStates += " Friends: " + totalFriends;
+	totalStates += "<br>Hybrid: " + totalHybrid;
+	totalStates += " Academic: " + totalAcademic;
+	totalStates += " Family: " + totalFamily; 
 	
 	document.getElementById("infoPane").innerHTML += totalStates;
+}
 
-
-	var myCenter = new google.maps.LatLng(40, -97);
-	//Map properties
-	var mapProp = {
-	  center: new google.maps.LatLng(20,-122.332071) ,
-	  zoom: zoomLevel,
-	  mapTypeId: google.maps.MapTypeId.TERRAIN,
-	  disableDefaultUI:true
-	};
-
-	// Build map in DOM
-	var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-	
-	//event listener setup
+function buildEventListeners(){
+		//event listener setup
 	for (var i=0; i < myMarkers.length ; i++){
 		myMarkers[i].setMap(map); 
 
@@ -190,57 +114,23 @@ function initialize() {
 		  		+ cityList["CityMap"][index][3]["Academic"].length
 		  		+ cityList["CityMap"][index][3]["Family"].length;
 
-				var infoText="<div style=\"font-family:quicksandbook\">"
-				infoText += "Network in " + myMarkers[index].getTitle() + ": "+ localTotal;
+				var infoText="Network in " + myMarkers[index].getTitle() + ": "+ localTotal;
 				infoText += "<br>Coffee: " + cityList["CityMap"][index][3]["Coffee"].length;
 			  	infoText += "  Professional: " + cityList["CityMap"][index][3]["Professional"].length;
 				infoText += "  Friends: " + cityList["CityMap"][index][3]["Friends"].length; 
 				infoText += "<br>Hybrid: " + cityList["CityMap"][index][3]["Hybrid"].length;
 				infoText += "  Academic: " + cityList["CityMap"][index][3]["Academic"].length;
-				infoText += "  Family: " + cityList["CityMap"][index][3]["Family"].length + "</div>";
+				infoText += "  Family: " + cityList["CityMap"][index][3]["Family"].length;
 
 				infowindows[index].setContent(infoText);
 		  		infowindows[index].open(map, myMarkers[index]);
 
-				openWin = infowindows[index];	
+				openWin = infowindows[index];		  		
+		  		//document.getElementById("localText").innerHTML = infoText;
 
-				//populate names	  		
-		  		var coffeeNames="";
-		  		for (var i = 0; i < cityList["CityMap"][index][3]["Coffee"].length; i++){
-		  			coffeeNames += cityList["CityMap"][index][3]["Coffee"][i] + "<br>";
-		  		}
-		  		document.getElementById("coffeeList").innerHTML = "Coffee: <br>" + coffeeNames;
-		  		
-		  		var proNames="";
-		  		for (var i = 0; i < cityList["CityMap"][index][3]["Professional"].length; i++){
+		  		//map.setZoom(5);
+		  		//map.setCenter(myMarkers[index].getPosition());
 
-		  			proNames += cityList["CityMap"][index][3]["Professional"][i] + "<br>";
-		  		}
-		  		document.getElementById("proList").innerHTML = "Professional: <br>" + proNames;
-		  		
-		  		var friendNames="";
-		  		for (var i = 0; i < cityList["CityMap"][index][3]["Friends"].length; i++){
-		  			friendNames += cityList["CityMap"][index][3]["Friends"][i] + "<br>";
-		  		}
-		  		document.getElementById("friendList").innerHTML = "Friends: <br>" + friendNames;
-
-		  		var hybridNames="";
-		  		for (var i = 0; i < cityList["CityMap"][index][3]["Hybrid"].length; i++){
-		  			hybridNames += cityList["CityMap"][index][3]["Hybrid"][i] + "<br>";
-		  		}
-		  		document.getElementById("hybridList").innerHTML = "Hybrid: <br>" + hybridNames;
-		  		
-		  		var academicNames="";
-		  		for (var i = 0; i < cityList["CityMap"][index][3]["Academic"].length; i++){
-		  			academicNames += cityList["CityMap"][index][3]["Academic"][i] + "<br>";
-		  		}
-		  		document.getElementById("academicList").innerHTML = "Academic: <br>" + academicNames;
-		  		
-		  		var familyNames="";
-		  		for (var i = 0; i < cityList["CityMap"][index][3]["Family"].length; i++){
-		  			familyNames += cityList["CityMap"][index][3]["Family"][i] + "<br>";
-		  		}
-		  		document.getElementById("familyList").innerHTML = "Family: <br>" + familyNames;
 		  	}
   			})(i));
 
@@ -248,12 +138,7 @@ function initialize() {
   		google.maps.event.addListener(infowindows[i],'closeclick',(function(index){
   			return function(){
   				//myMarkers[index].setMap(null);
-  				document.getElementById("coffeeList").innerHTML = "Coffee: <br>";
-  				document.getElementById("proList").innerHTML = "Professional: <br>";
-  				document.getElementById("friendList").innerHTML = "Friends: <br>";
-  				document.getElementById("hybridList").innerHTML = "Hybrid: <br>";
-  				document.getElementById("academicList").innerHTML = "Academic: <br>";
-  				document.getElementById("familyList").innerHTML = "Family: <br>";
+  				//document.getElementById("localText").innerHTML = "";
   				//console.log("Test on close event");
   				//map.setZoom(2);
 		  		//map.setCenter(myCenter);
@@ -261,8 +146,10 @@ function initialize() {
   		}) (i) );	
 	}
 
-	
-	// Draw all lines
+}
+
+function drawLines(){
+		// Draw all lines
 	for (var i = 0; i < myMarkers.length; i++){
 		//myMarkers[i].setMap(map);
 		
@@ -277,14 +164,15 @@ function initialize() {
 		lines.push(line);
 		
 	}
+}
 
-
-	//Styling rules for map. 
+function styleMap(){
+		//Styling rules for map. 
 	var styles = [
 	  {
 	    stylers: [
-	      // { hue: "#00ffe6" },
-	      // { saturation: -20 }
+	      //{ hue: "#00ffe6" },
+	      //{ saturation: -20 }
 	    ]
 	  },{
 	    featureType: "road",
@@ -303,14 +191,21 @@ function initialize() {
 	];
 	// Set styling rules
 	map.setOptions({styles: styles});
-	//myMarkers[0].setZIndex(google.maps.Marker.MAX_ZINDEX+1); 
-
+	myMarkers[0].setZIndex(google.maps.Marker.MAX_ZINDEX+1); 
 }
 
+function initialize(){
+	buildCityList();
+	countNetworks();
+	buildMarkers();
+	buildGlobalInfoString();
+	buildEventListeners();
+	drawLines();
+	styleMap();
+
+}
 // Initialize map on load. 
 google.maps.event.addDomListener(window, 'load', initialize);
-
-
 function populate(){
 
 	return { "CityMap": [
@@ -318,7 +213,7 @@ function populate(){
 		{
 			"Coffee":["Taylor Murphy", "Allison Hardy" , "Andrew Arguelles","Brian P Henley","Deejay Brower","Hannah Jones","Heather Siverson","Jonathan Angle","Katie Tague","Kelli A Taylor","Kelsey Batrack","Kennah Broweleit","Kim Berkley","Kylie Provost","Lizzie Humphries","Lizzie Rodrigue","Luke Elliott","Lyndsay Field Dyk","Madison Young","Maryclare Griffin","Matt Dalton","Mike J. Cannon","Sean Lieb","Stephen Brenden","Torin Bracey","Trent Siverson","Velton Ross","Vi Thai Nguyen"], 
 			"Professional":["Jim Balazic","Pete Grondal","Jim Freeze"],
-			"Hybrid":["Thierry Fortuner", "Ala Khan", "Alexandra Gunnoe", "Alexis Diana", "Amber Rose", "Andy Heye", "Anita Verna Crofts", "Ann Ho", "Anna Micheel", "Bob McHenry", "Brian Shook", "Bryan Frasier", "Caleb Buse", "Cameron Lacombe", "Carrie Hawthorne", "Casey Griffin", "Cassandra Schwartz ", "Cassie Wang", "Chad Bever", "Chloe Horning", "Chris Clark", "Chris Hawley", "Cody Heyn", "Cole Palen", "Dean Shimabukuro", "Elias Demisse", "Elizabeth Ziolkowski Berg", "Evan Kolius", "Hanson Hosein", "Hilary Lombard", "Ian Block", "Ian Newhall", "Jacob Christensen", "Jamie Rasmus", "Jared Sholk", "Jeff Samiljan", "Jennifer Burns", "Jennifer Buse", "Jihee Kim", "Jill Reddish", "Joe Hunich", "Joseph Pavey", "Jovana Teodorovic", "Katie Zacharkiw", "Kelly Merrill", "Ken Smith", "Kyle Richey", "Leigh Burmesch", "Lindsay Sieverkropp", "Logan Tegman", "Mark Guenther", "Michael Barela", "Michael Stein", "Naomi Thalenberg", "Nicholas Holman", "Paul Von Hagen", "Phil Melton", "Price Hall", "Raven Kelly Smith", "Renick Woods", "Ricky Poole", "Sam Larkin", "Scott Macklin", "Scott Morris", "Stephen Schroeder", "Steve Stansfeld", "Thomas Sergneri", "Tim Hurley", "Will Taylor Llapitan"],
+			"Hybrid":["Thierry FortunÃ©r", "Ala Khan", "Alexandra Gunnoe", "Alexis Diana", "Amber Rose", "Andy Heye", "Anita Verna Crofts", "Ann Ho", "Anna Micheel", "Bob McHenry", "Brian Shook", "Bryan Frasier", "Caleb Buse", "Cameron Lacombe", "Carrie Hawthorne", "Casey Griffin", "Cassandra Schwartz ", "Cassie Wang", "Chad Bever", "Chloe Horning", "Chris Clark", "Chris Hawley", "Cody Heyn", "Cole Palen", "Dean Shimabukuro", "Elias Demisse", "Elizabeth Ziolkowski Berg", "Evan Kolius", "Hanson Hosein", "Hilary Lombard", "Ian Block", "Ian Newhall", "Jacob Christensen", "Jamie Rasmus", "Jared Sholk", "Jeff Samiljan", "Jennifer Burns", "Jennifer Buse", "Jihee Kim", "Jill Reddish", "Joe Hunich", "Joseph Pavey", "Jovana Teodorovic", "Katie Zacharkiw", "Kelly Merrill", "Ken Smith", "Kyle Richey", "Leigh Burmesch", "Lindsay Sieverkropp", "Logan Tegman", "Mark Guenther", "Michael Barela", "Michael Stein", "Naomi Thalenberg", "Nicholas Holman", "Paul Von Hagen", "Phil Melton", "Price Hall", "Raven Kelly Smith", "Renick Woods", "Ricky Poole", "Sam Larkin", "Scott Macklin", "Scott Morris", "Stephen Schroeder", "Steve Stansfeld", "Thomas Sergneri", "Tim Hurley", "Will Taylor Llapitan"],
 			"Academic":["Bill Zumeta", "Aaron Katz"],
 			"Friends":["Adina Ewing","Alex Herbig","Andrew Hernandez","Andrew Salituri","Arielle Corson","Aubree Wilson","Beth Milstid","Billie Jean Tague","Brandy Westmore","Christopher McCool","Corey Skurka","Craig Bruce","Danette Ver Woert","Debbie Bryant","Elizabeth Kennedy","Elizabeth Woods","Erin Suderman","Jen Okimoto","Jihee Kim","Joe Bryant","John Varela","Kate Howland","Kathleen Moser","Kathleen Murray","Kathy Block","Keely Bryant","Liz Marie","Luke Rasmus","Max Benas","Melissa Naylor","Micah Dodson","Michael Henreckson","Michael Villanueva","Mindy Byram","Nicole McFarland","Peter Cecil O'Higgins","Rachel Nicole Rae","Rachel Olson","Rajan Cheriel","Ryan Bailey","Ryan Fitts","Sarah Samson","Shane Kodad","Shelby Huff","Stephanos Prufrock"],
 			"Family":["Jenny Lurene Lemley"] 
@@ -412,7 +307,7 @@ function populate(){
 			"Family":[] 
 		} ],
 
-	[ "Bedford, Texas", 32.8467,-97.1397 ,
+	[ "Bedford, Texas", 32.8467,97.1397 ,
 		{
 			"Coffee":[], 
 			"Professional":[],
@@ -868,7 +763,7 @@ function populate(){
 			"Professional":[],
 			"Hybrid":["Aaron Thomas","Chris Jenkins","Isaac Bermea","J'Rhea Carrillo","Jennifer Fraley-Nowacek","Judy Carpenter Howell","Julia Erin","Justin Lentz","Justin Thomas Williams","Kenna Pruitt","Lane Formby","Mike Nghiem","Steven Pilger","Taylor Harrell","Thomas Boyd","Wes Condray"],
 			"Academic":["Suzanne Fortenberry Hamilton"],
-			"Friends":["Allie Leigh","Amy Renee Gates","Andrew Searcy","Andrew West","Ann Cox","Anthony AP Perez","Anthony Mann","Armand Neri","Ashlee Paetzold Jolly","Ashley Brooke Webb","Ashley Martin","Ashtunn Akin","Barrett Pierce","Becky Straut Collier","Ben Laycock","Beth Krissa","Bobby Martinez","Brad Ruiz","Brady Collier","Brady Stoker","Brandon Tate","Brett Womble","Brian Chandler","Brian Drake","Brian Wilkins","Brianna Brewer","Britney Rice Limon","Brittany Brock","Brittney Bixler Stoker","Allie Timms","Amanda Fowler Griffith","Callie Mayes","Casey Lampert","Cassie Pene-Mogg","Celso Garcia","Cherenda Dobitz","Chip Darden","Chris Galanos","Chris Key","Chris Pettyjohn","Chrystal Gist","Clay Cristy","Cody Kimbrough","Colby McClellan","Courtney Brooks","D.j. Perez","Dacey Dunlap Carson","Danae Purtell","Daniel Gutierrez","Dawn Conwright","Devanie Cantrell","Dustin Perez","Dustin Petkau","Ellen Hood","Emily Green Brannon","Emily Joy Booker","Erin Dipprey","Erin Smith","Gabe Orta","Gabe Palacios","Gabriel Garcia","Gail Shooter","Gary Chandler","Gary Gates","Heath Stone","Henry Castillo","Humberto Del Valle","Jackie Eckman","Jade Booher","Jade Cooper Lagoski","Jake Warren","Jeff Koerner","Jenna Johnson","Jeremy Driscoll","Jeremy Graves","Jonathan Beck","Jordan Simmons","Jose Del Valle","Josef Blake","Katie Smith Trevino","Keith Gist","Kalen Dozier","Kallan Sanders","Kameron Rogers","Kassie McNelly","Kathleen Nations","Katie Smith Trevino","Keith Gist","Kevin Hardegree","Klarissa Mariscal","Kolbe Cotter","Kory Peterson","Krystal Kohanek Moyers","Kylen Karr McFarlin","Kyndra Smith","Lacy Prock","Laura Trent Taylor","Lisa Boden","Luke Howell","Lupe Flores","Lyndsi Dudley","Maegan Guthrie-Romero","Marcie Beeck Wilkins","Marcus Lowry","Mark Nix","Matt Patridge","Matthew Rider","Mikaela Forkner","Mikah Wisian","Milagros Gaytan","Mindy Aguilar","Mitchell Rambo","Morgan Worth","Natalie Thomas","Nathan Kaufman","Rachel R-Cat Porter","Rebecca Treadwell","Roland Adams","Ryan Pearson","Sara Hunter","Sara McNallen","Sarah Barbre Harper","Sawyer Howell","Sean Canaday","Sean Rude","Shelbi Bonds","Skylar Johnson","Spencer Gill","Stephanie Lambert","Stephanie Saldivar","Stephen Elliott","Stepheni Jayne","Steven Lunsford","Swade Moyers","Tamara Haney","Tanner Cruce","Taylor Freeman","Taylor Stoker","Taylor Wolf","Tiffany Padilla","Tim Fuentes","Timothy Fabrizzio Osaghae","Tony Harper","Trevor James","Wes Graves","Whitney Martin-Rister"],
+			"Friends":["Allie Leigh","Amy Renee Gates","Andrew Searcy","Andrew West","Ann Cox","Anthony AP Perez","Anthony Mann","Armand Neri","Ashlee Paetzold Jolly","Ashley Brooke Webb","Ashley Martin","Ashtunn Akin","Barrett Pierce","Becky Straut Collier","Ben Laycock","Beth Krissa","Bobby Martinez","Brad Ruiz","Brady Collier","Brady Stoker","Brandon Tate","Brett Womble","Brian Chandler","Brian Drake","Brian Wilkins","Brianna Brewer","Britney Rice Limon","Brittany Brock","Brittney Bixler Stoker","Allie Timms","Amanda Fowler Griffith","Callie Mayes","Casey Lampert","Cassie Pene-Mogg","Celso Garcia","Cherenda Dobitz","Chip Darden","Chris Galanos","Chris Key","Chris Pettyjohn","Chrystal Gist","Clay Cristy","Cody Kimbrough","Colby McClellan","Courtney Brooks","D.j. Perez","Dacey Dunlap Carson","Danae Purtell","Daniel Gutierrez","Dawn Conwright","Devanie Cantrell","Dustin Perez","Dustin Petkau","Ellen Hood","Emily Green Brannon","Emily Joy Booker","Erin Dipprey","Erin Smith","Gabe Orta","Gabe Palacios","Gabriel Garcia","Gail Shooter","Gary Chandler","Gary Gates","Heath Stone","Henry Castillo","Humberto Del Valle","Jackie Eckman","Jade Booher","Jade Cooper Lagoski","Jake Warren","Jeff Koerner","Jenna Johnson","Jeremy Driscoll","Jeremy Graves","Jonathan Beck","Jordan Simmons","Jose Del Valle","Josef Blake","Katie Smith Trevino","Keith Gist","Kalen Dozier","Kallan Sanders","Kameron Rogers","Kassie McNelly","Kathleen NationsKatie Smith Trevino","Keith Gist","Kevin Hardegree","Klarissa Mariscal","Kolbe Cotter","Kory Peterson","Krystal Kohanek Moyers","Kylen Karr McFarlin","Kyndra Smith","Lacy Prock","Laura Trent Taylor","Lisa Boden","Luke Howell","Lupe Flores","Lyndsi Dudley","Maegan Guthrie-Romero","Marcie Beeck Wilkins","Marcus Lowry","Mark Nix","Matt Patridge","Matthew Rider","Mikaela Forkner","Mikah Wisian","Milagros Gaytan","Mindy Aguilar","Mitchell Rambo","Morgan Worth","Natalie Thomas","Nathan Kaufman","Rachel R-Cat Porter","Rebecca Treadwell","Roland Adams","Ryan Pearson","Sara Hunter","Sara McNallen","Sarah Barbre Harper","Sawyer Howell","Sean Canaday","Sean Rude","Shelbi Bonds","Skylar Johnson","Spencer Gill","Stephanie Lambert","Stephanie Saldivar","Stephen Elliott","Stepheni Jayne","Steven Lunsford","Swade Moyers","Tamara Haney","Tanner Cruce","Taylor Freeman","Taylor Stoker","Taylor Wolf","Tiffany Padilla","Tim Fuentes","Timothy Fabrizzio Osaghae","Tony Harper","Trevor James","Wes Graves","Whitney Martin-Rister"],
 			"Family":["Melissa Gross","Shay Word","Venita Gross"] 
 		} ],
 
@@ -1429,7 +1324,7 @@ function populate(){
 			"Professional":[],
 			"Hybrid":[],
 			"Academic":[],
-			"Friends":["Jacek Jonca-Jasinski"],
+			"Friends":["Jacek JoÅ„ca-JasiÅ„ski"],
 			"Family":[] 
 		} ],
 
