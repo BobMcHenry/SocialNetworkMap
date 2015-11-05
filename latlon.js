@@ -107,7 +107,7 @@ function initialize() {
 	var totalHybrid=0;
 	var totalAcademic=0;
 	var totalFamily=0;
-	var zoomLevel=2;
+	var zoomLevel=6;
 
 	for (var i = 0; i < cityList["CityMap"].length; i++){
 		totalCoffee   += cityList["CityMap"][i][3]["Coffee"].length;
@@ -140,19 +140,7 @@ function initialize() {
 			);
 	}
 	
-	
-	// myMarkers[0].setIcon(
-	// 	{
-	// 		url:"home.png",
-	// 		origin: new google.maps.Point(0,0),
-	// 		anchor:new google.maps.Point(16,16),
-	// 		scaledSize:new google.maps.Size(32, 32), 
-	// 		zIndex:1
-
-	// 	}
-	// );
-	
-	var totalStates = "<br><a href=\"#\" onclick=\"map.setZoom(2);map.setCenter(new google.maps.LatLng(40,-90))\">Total Cities in Network: " + cityList["CityMap"].length + "</a>";
+	var totalStates = "<br><h1 onclick=\"map.setZoom(2);map.setCenter(new google.maps.LatLng(40,-90))\">Total Cities in Network: " + cityList["CityMap"].length + "</h1>";
 	totalStates += "<br><button id=\"totb\" onClick=\"allNet(cityList, lines, myMarkers)\">Total: " + totalNetwork+ "</button>";
 	totalStates += " <button id=\"cofb\" onClick=\"coffeeNet(cityList, lines, myMarkers)\">Coffee: " + totalCoffee + "</button>"; 
 	totalStates += " <button id=\"prob\" onClick=\"proNet(cityList, lines, myMarkers)\">Professional: " + totalPro+ "</button>";
@@ -164,12 +152,12 @@ function initialize() {
 	document.getElementById("infoPane").innerHTML += totalStates;
 
 
-	var myCenter =new google.maps.LatLng(40,-90) ;
+	var myCenter =new google.maps.LatLng(47.6252144,-122.4698705) ;
 	//Map properties
 	var mapProp = {
 	  center: myCenter,
 	  zoom: zoomLevel,
-	  mapTypeId: google.maps.MapTypeId.TERRAIN,
+	  mapTypeId: google.maps.MapTypeId.ROADMAP,
 	  disableDefaultUI:true
 	};
 
@@ -313,29 +301,35 @@ function initialize() {
 	document.getElementById("cities").innerHTML = cityNameList;
 
 	//Styling rules for map. 
-	var styles = [
-	  {
-	    stylers: [
-	      // { hue: "#00ffe6" },
-	      // { saturation: -20 }
-	    ]
-	  },{
-	    featureType: "road",
-	    elementType: "geometry",
-	    stylers: [
-	      { lightness: 100 },
-	      { visibility: "simplified" }
-	    ]
-	  },{
-	    featureType: "road",
-	    elementType: "labels",
-	    stylers: [
-	      { visibility: "off" }
-	    ]
-	  }
-	];
-	// Set styling rules
-	map.setOptions({styles: styles});
+	// var styles = [
+	//   {
+	//     stylers: [
+	//       // {hue: '#020201'},
+ //          {visibility: 'simplified'},
+ //          // {gamma: 0.5},
+ //          // {weight: 0.5}
+	//     ]
+	//   },{
+	//     featureType: "road",
+	//     elementType: "geometry",
+	//     stylers: [
+	//       { lightness: 75 },
+	//       { visibility: "simplified" }
+	//     ]
+	//   },{
+	//     featureType: "road",
+	//     elementType: "labels",
+	//     stylers: [
+	//       { visibility: "off" }
+	//     ]
+	//   },{
+	//   featureType: "water",
+ //   		 stylers: [
+ //        { gamma: 0.38 }
+ //    ]
+	// }];
+	// // Set styling rules
+	// map.setOptions({styles: styles});
 	//myMarkers[0].setZIndex(google.maps.Marker.MAX_ZINDEX+1); 
 
 }
