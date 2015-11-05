@@ -81,6 +81,8 @@
 		}
 	}
 
+
+
 	function setOpenWin(iw){
 		openWin = iw;
 	}
@@ -151,13 +153,13 @@ function initialize() {
 	// );
 	
 	var totalStates = "<br><a href=\"#\" onclick=\"map.setZoom(2);map.setCenter(new google.maps.LatLng(40,-90))\">Total Cities in Network: " + cityList["CityMap"].length + "</a>";
-	totalStates += "<br><button onClick=\"allNet(cityList, lines, myMarkers)\">Total: " + totalNetwork+ "</button>";
-	totalStates += " <button onClick=\"coffeeNet(cityList, lines, myMarkers)\">Coffee: " + totalCoffee + "</button>"; 
-	totalStates += " <button onClick=\"proNet(cityList, lines, myMarkers)\">Professional: " + totalPro+ "</button>";
-	totalStates += " <button onClick=\"friendsNet(cityList, lines, myMarkers)\">Friends: " + totalFriends+ "</button>";
-	totalStates += " <br><button onClick=\"hybridNet(cityList, lines, myMarkers)\">Hybrid: " + totalHybrid+ "</button>";
-	totalStates += " <button onClick=\"academicNet(cityList, lines, myMarkers)\">Academic: " + totalAcademic+ "</button>";
-	totalStates += " <button onClick=\"familyNet(cityList, lines, myMarkers)\">Family: " + totalFamily+ "</button>"; 
+	totalStates += "<br><button id=\"totb\" onClick=\"allNet(cityList, lines, myMarkers)\">Total: " + totalNetwork+ "</button>";
+	totalStates += " <button id=\"cofb\" onClick=\"coffeeNet(cityList, lines, myMarkers)\">Coffee: " + totalCoffee + "</button>"; 
+	totalStates += " <button id=\"prob\" onClick=\"proNet(cityList, lines, myMarkers)\">Professional: " + totalPro+ "</button>";
+	totalStates += " <button id=\"frib\" onClick=\"friendsNet(cityList, lines, myMarkers)\">Friends: " + totalFriends+ "</button>";
+	totalStates += " <br><button id=\"hybb\" onClick=\"hybridNet(cityList, lines, myMarkers)\">Hybrid: " + totalHybrid+ "</button>";
+	totalStates += " <button id=\"acab\" onClick=\"academicNet(cityList, lines, myMarkers)\">Academic: " + totalAcademic+ "</button>";
+	totalStates += " <button id=\"famb\" onClick=\"familyNet(cityList, lines, myMarkers)\">Family: " + totalFamily+ "</button>"; 
 	
 	document.getElementById("infoPane").innerHTML += totalStates;
 
@@ -194,7 +196,8 @@ function initialize() {
 		  		+ cityList["CityMap"][i][3]["Family"].length;
 
 				var infoText="<div style=\"font-family:quicksandbook\">"
-				infoText += "Network in " + myMarkers[i].getTitle() + ": "+ localTotal;
+				infoText += "<span class=\"title\">Network in " + myMarkers[i].getTitle() + "</span>";
+				infoText += "<br>Percent of total network: " + (localTotal/totalNetwork *100).toPrecision(4) + "%";
 				infoText += "<br>Coffee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Coffee"].length;
 			  	infoText += "<br>Professional&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Professional"].length;
 				infoText += "<br>Friends&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Friends"].length; 
@@ -223,38 +226,38 @@ function initialize() {
 		  		for (var i = 0; i < cityList["CityMap"][index][3]["Coffee"].length; i++){
 		  			coffeeNames += cityList["CityMap"][index][3]["Coffee"][i] + "<br>";
 		  		}
-		  		document.getElementById("coffeeList").innerHTML = "Coffee: <br>" + coffeeNames;
+		  		document.getElementById("coffeeList").innerHTML = "<span class=\"title\">Coffee: </span><br>" + coffeeNames;
 		  		
 		  		var proNames="";
 		  		for (var i = 0; i < cityList["CityMap"][index][3]["Professional"].length; i++){
 
 		  			proNames += cityList["CityMap"][index][3]["Professional"][i] + "<br>";
 		  		}
-		  		document.getElementById("proList").innerHTML = "Professional: <br>" + proNames;
+		  		document.getElementById("proList").innerHTML = "<span class=\"title\">Professional: </span><br>" + proNames;
 		  		
 		  		var friendNames="";
 		  		for (var i = 0; i < cityList["CityMap"][index][3]["Friends"].length; i++){
 		  			friendNames += cityList["CityMap"][index][3]["Friends"][i] + "<br>";
 		  		}
-		  		document.getElementById("friendList").innerHTML = "Friends: <br>" + friendNames;
+		  		document.getElementById("friendList").innerHTML = "<span class=\"title\">Friends: </span><br>" + friendNames;
 
 		  		var hybridNames="";
 		  		for (var i = 0; i < cityList["CityMap"][index][3]["Hybrid"].length; i++){
 		  			hybridNames += cityList["CityMap"][index][3]["Hybrid"][i] + "<br>";
 		  		}
-		  		document.getElementById("hybridList").innerHTML = "Hybrid: <br>" + hybridNames;
+		  		document.getElementById("hybridList").innerHTML = "<span class=\"title\">Hybrid: </span><br>" + hybridNames;
 		  		
 		  		var academicNames="";
 		  		for (var i = 0; i < cityList["CityMap"][index][3]["Academic"].length; i++){
 		  			academicNames += cityList["CityMap"][index][3]["Academic"][i] + "<br>";
 		  		}
-		  		document.getElementById("academicList").innerHTML = "Academic: <br>" + academicNames;
+		  		document.getElementById("academicList").innerHTML = "<span class=\"title\">Academic: </span><br>" + academicNames;
 		  		
 		  		var familyNames="";
 		  		for (var i = 0; i < cityList["CityMap"][index][3]["Family"].length; i++){
 		  			familyNames += cityList["CityMap"][index][3]["Family"][i] + "<br>";
 		  		}
-		  		document.getElementById("familyList").innerHTML = "Family: <br>" + familyNames;
+		  		document.getElementById("familyList").innerHTML = "<span class=\"title\">Family: </span><br>" + familyNames;
 		  	}
   			})(i));
 
@@ -262,12 +265,12 @@ function initialize() {
   		google.maps.event.addListener(infowindows[i],'closeclick',(function(index){
   			return function(){
   				//myMarkers[index].setMap(null);
-  				document.getElementById("coffeeList").innerHTML = "Coffee: <br>";
-  				document.getElementById("proList").innerHTML = "Professional: <br>";
-  				document.getElementById("friendList").innerHTML = "Friends: <br>";
-  				document.getElementById("hybridList").innerHTML = "Hybrid: <br>";
-  				document.getElementById("academicList").innerHTML = "Academic: <br>";
-  				document.getElementById("familyList").innerHTML = "Family: <br>";
+  				document.getElementById("coffeeList").innerHTML = "<span class=\"title\">Coffee: </span><br>";
+  				document.getElementById("proList").innerHTML = "<span class=\"title\">Professional: </span><br>";
+  				document.getElementById("friendList").innerHTML = "<span class=\"title\">Friends: </span><br>";
+  				document.getElementById("hybridList").innerHTML = "<span class=\"title\">Hybrid: </span><br>";
+  				document.getElementById("academicList").innerHTML = "<span class=\"title\">Academic: </span><br>";
+  				document.getElementById("familyList").innerHTML = "<span class=\"title\">Family: </span><br>";
   				//console.log("Test on close event");
   				//map.setZoom(2);
 		  		//map.setCenter(myCenter);

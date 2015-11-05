@@ -1,4 +1,4 @@
-
+/**/
 body {
     background-color: #0064B4;
     font-family: heading;
@@ -23,38 +23,71 @@ button{
     height:30px;
     background-color: #0097E7;
     margin:4px;
+    border:0px;
 }
-button:focus {outline:0;}
+button:focus {
+    outline:0;
+}
+
 a{
     text-decoration: none;
     color:#000;
 }
 #container{
-    /*position: absolute;*/
-    max-width:1000px;
-    max-height: 600px;
-    margin: 0 auto;  
-    /*display:inline-block;*/
-}
-#mapWrapper{
-    /*float:left;*/
     display: inline-block;
-    position: relative;
+    width:1000px;
+    height:720px;
+
+    position:absolute;
+    left:50%;
+
+    margin-left:-500px; /* -1/2 width */
+    
+}
+
+#infoPane{
+    /*font-weight: bold;*/
+    background-color: #FFF;
+    color: #000000;
+
+    /*position: absolute;*/
+    width:976px;
+    min-height:100px;
+    /*z-index: 2;*/
+    text-align: center;
+    padding:0px 6px 6px 6px;
+    border-top:6px solid #e45544;
+    border-right:6px solid #e45544;
+    border-left:6px solid #e45544;
+    border-bottom:3px solid #e45544;
+    margin:0 auto;
+    /*float:left;*/
+    /*margin-right: 0;*/
+  }
+
+#mapWrapper{
+    float:left;
+    /*display: inline-block;*/
+    /*position: relative;*/
+    width: 1000px;
+    height:400px;
+    display: inline-block;
     
     
 }
 #googleMap{
 	/*position: relative;*/
-	min-width:810px;
-	min-height:400px;
-    max-width:810px;
-    max-height:420px;
+	width:780px;
+	height:394px;
+    
+    /*max-height:400px;*/
 	/*z-index: 1;*/
     border-top:3px solid #e45544;
     border-right:6px solid #e45544;
     border-left:3px solid #e45544;
     border-bottom:3px solid #e45544;
     float:left;  
+    margin:0 auto;
 
 	}
 
@@ -64,9 +97,9 @@ a{
     font-family: quicksandbook;
     font-size: .7em;
     background-color: #FFF;
-    min-width:170px;
-    min-height:400; 
-    max-width:170px;
+    width:200px;
+    height:394px; 
+    /*max-width:170px;*/
     max-height:400px;
     border-top:3px solid #e45544;
     border-right:3px solid #e45544;
@@ -78,30 +111,16 @@ a{
 
   }
 
-#infoPane{
-    /*font-weight: bold;*/
-    background-color: #FFF;
-    color: #000000;
-
-    /*position: absolute;*/
-    min-width:900px;
-    min-height:100px;
-    /*z-index: 2;*/
-    text-align: center;
-    padding:0px 5px 5px 5px;
-    border-top:6px solid #e45544;
-    border-right:6px solid #e45544;
-    border-left:6px solid #e45544;
-    border-bottom:3px solid #e45544;
-    margin:0 auto;
-  }
 .title{
     font-family: heading;
+    font-size: 1.2em;
+    text-align: center;
 }
 .namesList{
+    display:inline-block;
     font-family: quicksandbook;
     font-size: .7em;
-    display: inline-block;
+    /*display: inline-block;*/
     /*position: absolute;*/
     /*border:1px dashed black;*/
     min-width: 154px;
@@ -109,31 +128,28 @@ a{
     min-height: 158px;
     max-height: 158px;
     /*float:center;*/
-    text-align: left;
+    /*text-align: left;*/
     overflow-y: scroll;
     overflow-x: scroll;
     border-right:2px solid #e45544;
-    margin-top: 3px;
+    margin-top: 4px;
+    /*float:left; */
 }
 #namePane{
-    /*font-weight: bold;*/
+    
     background-color: #FFF;
     color: #000000;
-    
-    /*position: fixed;*/
-    /*min-width:900px;*/
-    min-height:160px;
-    max-width:1000px;
-    max-height:160px;
-    /*z-index: 2;*/
+    height:160px;
+    width:988px;
     text-align: center;
-    padding:0px 5px 5px 5px;
+    /*padding:0px 5px 5px 5px;*/
     border-top:3px solid #e45544;
     border-right:6px solid #e45544;
     border-left:6px solid #e45544;
     border-bottom:6px solid #e45544;
     margin:0 auto;
     /*overflow-y: scroll;*/
+    float:left; 
   }
 
 
