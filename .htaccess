@@ -3,3 +3,5 @@
 Header set Access-Control-Allow-Origin "*"
 </IfModule>
 </FilesMatch>
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz

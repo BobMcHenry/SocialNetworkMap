@@ -36,7 +36,7 @@
 				return "family.png";
 				break;
 			case key[6]:
-				return "commlead.svg";
+				return "commlead.png";
 				break;
 		}
 	}
@@ -191,9 +191,9 @@
 				myMarkers[i].setVisible(true);
 				myMarkers[i].setIcon(
 					{
-						url:"commlead.svg",
-			  			scaledSize:new google.maps.Size(48, 48),
-			  			anchor:new google.maps.Point(24,24),
+						url:"commlead.png",
+			  			scaledSize:new google.maps.Size(64, 64),
+			  			anchor:new google.maps.Point(32,32),
 			  			zIndex:5 
 			  		}
 				);
