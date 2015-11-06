@@ -16,6 +16,7 @@ function initialize() {
 	var totalHybrid=0;
 	var totalAcademic=0;
 	var totalFamily=0;
+	var totalCommLead=0;
 	var zoomLevel=6;
 
 	for (var i = 0; i < cityList["CityMap"].length; i++){
@@ -25,8 +26,10 @@ function initialize() {
 		totalHybrid   += cityList["CityMap"][i][3]["Hybrid"].length;
 		totalAcademic += cityList["CityMap"][i][3]["Academic"].length;
 		totalFamily   += cityList["CityMap"][i][3]["Family"].length;
+		console.log(i + " -- " + cityList["CityMap"][i][3]);
+		totalCommLead += cityList["CityMap"][i][3]["CommLead"].length;
 	}
-	var totalNetwork = totalCoffee + totalPro + totalFriends + totalHybrid + totalAcademic + totalFamily;
+	var totalNetwork = totalCommLead + totalCoffee + totalPro + totalFriends + totalHybrid + totalAcademic + totalFamily;
 	//console.log(totalNetwork);
 
 	for (var i = 0; i < cityList["CityMap"].length; i++ )
@@ -57,6 +60,7 @@ function initialize() {
 	totalStates += " <br><button id=\"hybb\" onClick=\"hybridNet(cityList, lines, myMarkers)\">Hybrid: " + totalHybrid+ "</button>";
 	totalStates += " <button id=\"acab\" onClick=\"academicNet(cityList, lines, myMarkers)\">Academic: " + totalAcademic+ "</button>";
 	totalStates += " <button id=\"famb\" onClick=\"familyNet(cityList, lines, myMarkers)\">Family: " + totalFamily+ "</button>"; 
+	totalStates += " <button id=\"comb\" onClick=\"commLeadNet(cityList, lines, myMarkers)\">CommLead: " + totalCommLead+ "</button>"; 
 	
 	document.getElementById("infoPane").innerHTML += totalStates;
 

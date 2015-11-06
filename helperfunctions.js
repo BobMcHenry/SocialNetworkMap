@@ -7,6 +7,7 @@
 			myMarkers[i].setVisible(true);
 		}
 	}
+
 	function coffeeNet(cityList, lines, myMarkers){
 		for (var i = 0; i < myMarkers.length; i++){
 			if (cityList["CityMap"][i][3]["Coffee"].length < 1){
@@ -80,6 +81,20 @@
 			}
 		}
 	}
+		function commLeadNet(cityList, lines, myMarkers){
+		for (var i = 0; i < myMarkers.length; i++){
+			if (cityList["CityMap"][i][3]["CommLead"].length < 1){
+				lines[i].setVisible(false);
+				myMarkers[i].setVisible(false);
+			} else {
+				lines[i].setVisible(true);
+				lines[i].setOptions({strokeWeight:1.5});
+				myMarkers[i].setVisible(true);
+
+			}
+		}
+	}
+
 
 
 
