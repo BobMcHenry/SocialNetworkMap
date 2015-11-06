@@ -36,7 +36,7 @@
 				return "family.png";
 				break;
 			case key[6]:
-				return "commlead.png";
+				return "commlead.svg";
 				break;
 		}
 	}
@@ -191,7 +191,7 @@
 				myMarkers[i].setVisible(true);
 				myMarkers[i].setIcon(
 					{
-						url:"commlead.png",
+						url:"commlead.svg",
 			  			scaledSize:new google.maps.Size(48, 48),
 			  			anchor:new google.maps.Point(24,24),
 			  			zIndex:5 
