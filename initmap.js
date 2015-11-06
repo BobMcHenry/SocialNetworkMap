@@ -26,7 +26,7 @@ function initialize() {
 		totalHybrid   += cityList["CityMap"][i][3]["Hybrid"].length;
 		totalAcademic += cityList["CityMap"][i][3]["Academic"].length;
 		totalFamily   += cityList["CityMap"][i][3]["Family"].length;
-		console.log(i + " -- " + cityList["CityMap"][i][3]);
+		//console.log(i + " -- " + cityList["CityMap"][i][3]);
 		totalCommLead += cityList["CityMap"][i][3]["CommLead"].length;
 	}
 	var totalNetwork = totalCommLead + totalCoffee + totalPro + totalFriends + totalHybrid + totalAcademic + totalFamily;
@@ -64,6 +64,9 @@ function initialize() {
 	
 	document.getElementById("infoPane").innerHTML += totalStates;
 
+/////////////////////
+///// SETUP MAP /////
+/////////////////////
 
 	var myCenter =new google.maps.LatLng(47.6252144,-122.4698705) ;
 	//Map properties
@@ -78,10 +81,10 @@ function initialize() {
 	map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
 	
 
+/////////////////////////////////
+///// SETUP Event Listeners /////
+/////////////////////////////////
 
-
-
-	//event listener setup
 	for (var i=0; i < myMarkers.length ; i++){
 		myMarkers[i].setMap(map); 
 
@@ -104,7 +107,8 @@ function initialize() {
 				infoText += "<br>Friends&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Friends"].length; 
 				infoText += "<br>Hybrid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Hybrid"].length;
 				infoText += "<br>Academic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Academic"].length;
-				infoText += "<br>Family&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Family"].length + "</div>";
+				infoText += "<br>Family&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["Family"].length;
+				infoText += "<br>CommLead&nbsp;&nbsp;:&nbsp; " + cityList["CityMap"][i][3]["CommLead"].length + "</div>";
 
 				infowindows[i].setContent(infoText);
 				openWin = infowindows[i];
@@ -159,6 +163,12 @@ function initialize() {
 		  			familyNames += cityList["CityMap"][index][3]["Family"][i] + "<br>";
 		  		}
 		  		document.getElementById("familyList").innerHTML = "<span class=\"title\">Family: </span><br>" + familyNames;
+
+		  		var commNames="";
+		  		for (var i = 0; i < cityList["CityMap"][index][3]["CommLead"].length; i++){
+		  			commNames += cityList["CityMap"][index][3]["CommLead"][i] + "<br>";
+		  		}
+		  		document.getElementById("commList").innerHTML = "<span class=\"title\">CommLead: </span><br>" + commNames;
 		  	}
   			})(i));
 
@@ -172,6 +182,7 @@ function initialize() {
   				document.getElementById("hybridList").innerHTML = "<span class=\"title\">Hybrid: </span><br>";
   				document.getElementById("academicList").innerHTML = "<span class=\"title\">Academic: </span><br>";
   				document.getElementById("familyList").innerHTML = "<span class=\"title\">Family: </span><br>";
+  				document.getElementById("commList").innerHTML = "<span class=\"title\">CommLead: </span><br>";
   				//console.log("Test on close event");
   				//map.setZoom(2);
 		  		//map.setCenter(myCenter);

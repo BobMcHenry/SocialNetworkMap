@@ -466,11 +466,11 @@ function populate(){
 		{
 			"Coffee":[], 
 			"Professional":[],
-			"Hybrid":["Filip Egert", "Hannes Detjen"],
+			"Hybrid":[],
 			"Academic":[],
 			"Friends":[],
 			"Family":[], 
-		    "CommLead":[] 
+		    "CommLead":["Filip Egert", "Hannes Detjen"] 
      } ],
 
 	[ "Ho Chi Minh City, Vietnam", 10.823099,106.629664 ,
