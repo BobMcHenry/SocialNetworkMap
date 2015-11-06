@@ -1261,8 +1261,8 @@ function populate(){
 			"Hybrid":[],
 			"Academic":[],
 			"Friends":[],
-			"Family":["Yixuan Long"],
-			"CommLead":[] 
+			"Family":[],
+			"CommLead":["Yixuan Long"] 
 		} ]
 
 	]}

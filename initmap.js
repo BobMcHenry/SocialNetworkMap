@@ -32,17 +32,23 @@ function initialize() {
 	var totalNetwork = totalCommLead + totalCoffee + totalPro + totalFriends + totalHybrid + totalAcademic + totalFamily;
 	//console.log(totalNetwork);
 
+
+
 	for (var i = 0; i < cityList["CityMap"].length; i++ )
 	{
+		// var iconStr = getNetworkIcon(i)
+		// console.log(cityList["CityMap"][i][3]);
+		// console.log(getNetworkIcon(cityList["CityMap"][i][3]));
 			myMarkers.push(
 			  new google.maps.Marker(
 			  	{
+
 			  		position:new google.maps.LatLng(cityList["CityMap"][i][1],cityList["CityMap"][i][2]),
 			  		icon: 
 			  			{
-			  				url:"icon.png",
-			  				scaledSize:new google.maps.Size(24, 26),
-			  				anchor:new google.maps.Point(12,13),
+			  				url: getNetworkIcon(cityList["CityMap"][i][3]),
+			  				scaledSize:new google.maps.Size(32, 32),
+			  				anchor:new google.maps.Point(16,16),
 			  				zIndex:5
 
 			  			},
@@ -81,9 +87,10 @@ function initialize() {
 	map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
 	
 
-/////////////////////////////////
-///// SETUP Event Listeners /////
-/////////////////////////////////
+///////////////////////////////////
+////// SETUP Event Listeners //////
+//// Populate map with markers ////
+///////////////////////////////////
 
 	for (var i=0; i < myMarkers.length ; i++){
 		myMarkers[i].setMap(map); 
@@ -92,12 +99,14 @@ function initialize() {
 		  			{ /* content:"<div>"+myMarkers[i].getTitle()+"</div>"*/ } );
 		infowindows.push(iw);
 
-		  		var localTotal = cityList["CityMap"][i][3]["Coffee"].length
+		  		var localTotal = 
+		  		  cityList["CityMap"][i][3]["Coffee"].length
 		  		+ cityList["CityMap"][i][3]["Professional"].length
 		  		+ cityList["CityMap"][i][3]["Friends"].length
 		  		+ cityList["CityMap"][i][3]["Hybrid"].length
 		  		+ cityList["CityMap"][i][3]["Academic"].length
-		  		+ cityList["CityMap"][i][3]["Family"].length;
+		  		+ cityList["CityMap"][i][3]["Family"].length
+		  		+ cityList["CityMap"][i][3]["CommLead"].length;
 
 				var infoText="<div style=\"font-family:quicksandbook\">"
 				infoText += "<span class=\"title\">Network in " + myMarkers[i].getTitle() + "</span>";
@@ -210,7 +219,7 @@ function initialize() {
 	var cityNameList="";
 	var iwLink;
 	for (var i = 0; i < myMarkers.length; i++){
-		console.log(myMarkers.length);
+		//console.log(myMarkers.length);
 		iwLink=infowindows[i];
 		cityNameList += 
 					"<a href=\"#\" onclick=\"openWin.close();"

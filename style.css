@@ -10,7 +10,8 @@ h1{
 }
 @font-face {
     font-family: heading;
-    src: url("montserrat-regular.ttf");
+    src: url("quicksand_book-webfont.ttf");
+    font-weight: bold;
 }
 @font-face {
     font-family: quicksandbook;

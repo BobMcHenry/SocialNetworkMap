@@ -1,10 +1,61 @@
+	function getNetworkIcon(cl){
+		var key = Object.keys(cl);
 
+		console.log("1: " + cl.length);
+		console.log("2: " + key[0]);
+		var highest = 0;
+		var highStr = "";
+		for (var i = 0; i < key.length; i++){
+			console.log("3: " + highest + " " + highStr);
+			if (cl[key[i]].length > highest){
+				highest = cl[key[i]].length; 
+				highStr = key[i];
+				console.log("4: " + highest + " " + highStr);
+			}
+		}
+
+		console.log("*************returning " + highStr);
+//["Coffee", "Professional", "Hybrid", "Academic", "Friends", "Family", "CommLead"]
+		switch(highStr){
+			case ""+key[0]:
+				return "coffee.png";
+				break;
+			case key[1]:
+				return "business.png";
+				break;
+			case key[2]:
+				return "icon.png";
+				break;
+			case key[3]:
+				return "academic.png";
+				break;
+			case key[4]:
+				return "friends.png";
+				break;
+			case key[5]:
+				return "family.png";
+				break;
+			case key[6]:
+				return "commlead.png";
+				break;
+		}
+	}
 	
 	function allNet(cityList, lines, myMarkers){
 		for (var i = 0; i < myMarkers.length; i++){
 			lines[i].setVisible(true);
 			lines[i].setOptions({strokeWeight:0.8});
 			myMarkers[i].setVisible(true);
+			myMarkers[i].setIcon(
+			  			{
+			  				url: getNetworkIcon(cityList["CityMap"][i][3]),
+			  				scaledSize:new google.maps.Size(32, 32),
+			  				anchor:new google.maps.Point(16,16),
+			  				zIndex:5
+
+			  			}
+				);
+			//url: getNetworkIcon(cityList["CityMap"][i][3])
 		}
 	}
 
@@ -17,6 +68,14 @@
 				lines[i].setVisible(true);
 				lines[i].setOptions({strokeWeight:1.5});
 				myMarkers[i].setVisible(true);
+				myMarkers[i].setIcon(
+					{
+						url:"coffee.png",
+			  			scaledSize:new google.maps.Size(32, 32),
+			  			anchor:new google.maps.Point(16,16),
+			  			zIndex:5 
+			  		}
+				);
 
 			}
 		}
@@ -30,6 +89,14 @@
 				lines[i].setVisible(true);
 				lines[i].setOptions({strokeWeight:1.5});
 				myMarkers[i].setVisible(true);
+				myMarkers[i].setIcon(
+					{
+						url:"business.png",
+			  			scaledSize:new google.maps.Size(32, 32),
+			  			anchor:new google.maps.Point(16,16),
+			  			zIndex:5 
+			  		}
+				);
 			}
 		}
 	}
@@ -42,6 +109,14 @@
 				lines[i].setVisible(true);
 				lines[i].setOptions({strokeWeight:1.5});
 				myMarkers[i].setVisible(true);
+				myMarkers[i].setIcon(
+					{
+						url:"icon.png",
+			  			scaledSize:new google.maps.Size(32, 32),
+			  			anchor:new google.maps.Point(16,16),
+			  			zIndex:5 
+			  		}
+				);
 			}
 		}
 	}
@@ -54,6 +129,14 @@
 				lines[i].setVisible(true);
 				lines[i].setOptions({strokeWeight:1.5});
 				myMarkers[i].setVisible(true);
+				myMarkers[i].setIcon(
+					{
+						url:"friends.png",
+			  			scaledSize:new google.maps.Size(32, 32),
+			  			anchor:new google.maps.Point(16,16),
+			  			zIndex:5 
+			  		}
+				);
 			}
 		}
 	}
@@ -66,6 +149,14 @@
 				lines[i].setVisible(true);
 				lines[i].setOptions({strokeWeight:1.5});
 				myMarkers[i].setVisible(true);
+				myMarkers[i].setIcon(
+					{
+						url:"academic.png",
+			  			scaledSize:new google.maps.Size(32, 32),
+			  			anchor:new google.maps.Point(16,16),
+			  			zIndex:5 
+			  		}
+				);
 			}
 		}
 	}
@@ -78,6 +169,14 @@
 				lines[i].setVisible(true);
 				lines[i].setOptions({strokeWeight:1.5});
 				myMarkers[i].setVisible(true);
+				myMarkers[i].setIcon(
+					{
+						url:"family.png",
+			  			scaledSize:new google.maps.Size(32, 32),
+			  			anchor:new google.maps.Point(16,16),
+			  			zIndex:5 
+			  		}
+				);
 			}
 		}
 	}
@@ -90,6 +189,14 @@
 				lines[i].setVisible(true);
 				lines[i].setOptions({strokeWeight:1.5});
 				myMarkers[i].setVisible(true);
+				myMarkers[i].setIcon(
+					{
+						url:"commlead.png",
+			  			scaledSize:new google.maps.Size(48, 48),
+			  			anchor:new google.maps.Point(24,24),
+			  			zIndex:5 
+			  		}
+				);
 
 			}
 		}
