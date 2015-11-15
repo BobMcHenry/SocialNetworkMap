@@ -42,11 +42,14 @@ a{
     display: inline-block;
     width:1000px;
     height:720px;
-
+    margin:auto;
     position:absolute;
     left:50%;
+    bottom:50%;
+    
 
     margin-left:-500px; /* -1/2 width */
+    margin-bottom: -360px;
     
 }
 
